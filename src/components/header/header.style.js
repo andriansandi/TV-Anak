@@ -9,12 +9,12 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     container: {
-        // height: 40,
-        backgroundColor: '#000',
         padding: 15,
         justifyContent: 'flex-start'
     },
     appname: {
-        color: '#fff'
+        fontFamily: 'schoolboy',
+        fontSize: 18,
+        color: '#F1BB2E'
     }
 });

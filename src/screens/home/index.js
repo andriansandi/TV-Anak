@@ -6,16 +6,21 @@
  **/
 
 import React, { Component } from 'react';
-import { Alert } from 'react-native';
+import { Alert, View } from 'react-native';
 import { Text } from 'react-native-elements';
 
 //import custom components
 import Header from '../../components/header';
+import VideoLists from '../../components/videos/lists';
 
 export default class Home extends Component {
     render() {
         return (
-            <Header></Header>
+            <View>
+                <Header></Header>
+                <VideoLists></VideoLists>
+            </View>
+            
             // <Text h1>Home</Text>
         );
     }
