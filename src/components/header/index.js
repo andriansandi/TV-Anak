@@ -8,7 +8,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Text } from 'react-native-elements';
-import LinearGradient from 'react-native-linear-gradient';
 
 // Import Style
 import styles from './header.style.js';

@@ -21,26 +21,46 @@ const videos = [
         name: 'UPIN IPIN',
         avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
     },
-]
+];
+
+
 
 import React, { Component } from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Dimensions } from 'react-native';
 // import { Text } from 'react-native-elements';
 
 //import custom components
 import Header from '../../components/header';
 import VideoLists from '../../components/videos/lists';
 
+//import styles
+import styles from './home.style';
+
+const { width } = Dimensions.get('window');
+
 export default class Home extends Component {
     render() {
         return (
-            <View style={{ flex: 1 }}>
+            <View style={styles.container}>
                 <Header />
-                <ScrollView horizontal={true} style={{ flex: 1}}>
-                    {videos.map((item, key) =>
-                        <VideoLists key={item.id} />
-                    )}
-                </ScrollView>
+                <View style={styles.wrapper}>
+                    <ScrollView 
+                        horizontal={true} 
+                        decelerationRate={0}
+                        snapToInterval={width - 60}
+                        snapToAlignment={"center"}     
+                        contentInset={{
+                            top: 0,
+                            left: 30,
+                            bottom: 0,
+                            right: 30,
+                        }} 
+                        style={styles.scrollview}>
+                        {videos.map((item, key) =>
+                            <VideoLists key={item.id} />
+                        )}
+                    </ScrollView>
+                </View>
             </View>
         );
     }
