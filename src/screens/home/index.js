@@ -5,9 +5,27 @@
  * @since       Feb 10, 2019
  **/
 
+const videos = [
+    {
+        id: 1,
+        name: 'brynn',
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
+    },
+    {
+        id: 2,
+        name: 'UPIN IPIN',
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
+    },
+    {
+        id: 3,
+        name: 'UPIN IPIN',
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
+    },
+]
+
 import React, { Component } from 'react';
-import { Alert, View } from 'react-native';
-import { Text } from 'react-native-elements';
+import { ScrollView } from 'react-native';
+// import { Text } from 'react-native-elements';
 
 //import custom components
 import Header from '../../components/header';
@@ -16,10 +34,12 @@ import VideoLists from '../../components/videos/lists';
 export default class Home extends Component {
     render() {
         return (
-            <View>
-                <Header></Header>
-                <VideoLists></VideoLists>
-            </View>
+            <ScrollView>
+                <Header />
+                {videos.map((item, key) =>
+                    <VideoLists key={item.id} />
+                )}
+            </ScrollView>
             
             // <Text h1>Home</Text>
         );

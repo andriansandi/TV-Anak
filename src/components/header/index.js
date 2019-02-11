@@ -16,7 +16,7 @@ export default class TVAnakHeader extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text h5 style={styles.appname}>tvanak</Text>
+                <Text h5 style={styles.appname}>KIDDOSTV</Text>
             </View>
         );
     }

@@ -10,11 +10,18 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         padding: 15,
-        justifyContent: 'flex-start'
+        justifyContent: 'center',
+        alignItems: 'center'
+        // backgroundColor: '#F1BB2E',
+        // marginLeft: 10,
+        // marginRight: 10,
+        // marginTop: 10,
+        // borderRadius: 5
     },
     appname: {
         fontFamily: 'schoolboy',
         fontSize: 18,
-        color: '#F1BB2E'
+        color: '#F1BB2E',
+        // color: '#fff'
     }
 });
