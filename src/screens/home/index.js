@@ -24,7 +24,7 @@ const videos = [
 ]
 
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 // import { Text } from 'react-native-elements';
 
 //import custom components
@@ -34,14 +34,14 @@ import VideoLists from '../../components/videos/lists';
 export default class Home extends Component {
     render() {
         return (
-            <ScrollView>
+            <View style={{ flex: 1 }}>
                 <Header />
-                {videos.map((item, key) =>
-                    <VideoLists key={item.id} />
-                )}
-            </ScrollView>
-            
-            // <Text h1>Home</Text>
+                <ScrollView horizontal={true} style={{ flex: 1}}>
+                    {videos.map((item, key) =>
+                        <VideoLists key={item.id} />
+                    )}
+                </ScrollView>
+            </View>
         );
     }
 }
