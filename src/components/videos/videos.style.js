@@ -12,7 +12,7 @@ export default StyleSheet.create({
     container: {
         backgroundColor: 'transparent',
         borderWidth: 0,
-        width: 300,
+        width: 240,
         height: 200,
         marginTop: 0,
         marginBottom: 0,
@@ -26,7 +26,7 @@ export default StyleSheet.create({
     },  
 
     image: {
-        width: 300,
+        width: 240,
         height: 200,
         borderWidth: 0,
         borderRadius: 8,

@@ -11,17 +11,13 @@ export default StyleSheet.create({
     container: {
         paddingVertical: 15,
         paddingHorizontal: 15,
-        justifyContent: 'flex-start',
-        backgroundColor: '#FF1312',
-        // marginLeft: 10,
-        // marginRight: 10,
-        // marginTop: 10,
-        // borderRadius: 5
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'transparent',
     },
     appname: {
         fontFamily: 'schoolboy',
         fontSize: 18,
-        color: '#FF9705',
-        // color: '#fff'
+        color: '#517B7B',
     }
 });

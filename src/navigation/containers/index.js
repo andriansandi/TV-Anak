@@ -16,7 +16,10 @@ const navigator = createStackNavigator({
 	Home: Home
 }, {
 	initialRouteName: 'Home',
-	headerMode: 'none'
+	headerMode: 'none',
+	cardStyle: {
+		backgroundColor: "transperent"
+	}
 });
 
 export default createAppContainer(navigator);

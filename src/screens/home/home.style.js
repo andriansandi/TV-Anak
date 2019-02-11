@@ -16,12 +16,14 @@ export default StyleSheet.create({
 
     wrapper: {
         flex: 1,
-        backgroundColor: '#FF1312',
+        backgroundColor: 'transparent',
         paddingTop: 5,
         // paddingLeft: 20,
     },
 
-    scrollview: {},
+    scrollview: {
+       
+    },
 
     // container: {
     //     // flex: 1, 

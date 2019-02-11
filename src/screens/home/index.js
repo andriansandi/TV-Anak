@@ -26,8 +26,7 @@ const videos = [
 
 
 import React, { Component } from 'react';
-import { View, ScrollView, Dimensions } from 'react-native';
-// import { Text } from 'react-native-elements';
+import { View, ScrollView, Dimensions, Image, Text } from 'react-native';
 
 //import custom components
 import Header from '../../components/header';
